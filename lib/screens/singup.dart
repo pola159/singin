@@ -110,8 +110,9 @@ class _singupclassState extends State<singupclass> {
                     child: MaterialButton(
                       onPressed: () {
                         if (form.currentState!.validate() &&
-                            form1.currentState!.validate() && emailCont.text == "admin@gmail.com" &&
-                            passCont.text == "admin123" ) {
+                            form1.currentState!.validate() &&
+                            emailCont.text == "admin@gmail.com" &&
+                            passCont.text == "admin123") {
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (ctx) {
                             return whatsapp();
